@@ -57,3 +57,50 @@ def plot_res_images_slice(
         wspace=0.02, hspace=0.04, left=0.03, right=0.97, bottom=0.04, top=0.99
     )
     plt.show()
+
+
+def plot_two_images_side_by_side(
+    image_path1: str,
+    image_path2: str,
+    title1: str = "Image 1",
+    title2: str = "Image 2",
+):
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+
+    if os.path.exists(image_path1):
+        img1 = mpimg.imread(image_path1)
+        ax1.imshow(img1)
+        ax1.set_title(title1, fontsize=14, pad=10)
+        ax1.axis("off")
+    else:
+        ax1.text(
+            0.5,
+            0.5,
+            f"Image not found:\n{image_path1}",
+            ha="center",
+            va="center",
+            transform=ax1.transAxes,
+        )
+        ax1.set_title("Error", fontsize=14, pad=10)
+        ax1.axis("off")
+
+    if os.path.exists(image_path2):
+        img2 = mpimg.imread(image_path2)
+        ax2.imshow(img2)
+        ax2.set_title(title2, fontsize=14, pad=10)
+        ax2.axis("off")
+    else:
+        ax2.text(
+            0.5,
+            0.5,
+            f"Image not found:\n{image_path2}",
+            ha="center",
+            va="center",
+            transform=ax2.transAxes,
+        )
+        ax2.set_title("Error", fontsize=14, pad=10)
+        ax2.axis("off")
+
+    plt.subplots_adjust(wspace=0.1)
+
+    plt.show()
