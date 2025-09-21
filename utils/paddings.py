@@ -57,4 +57,4 @@ def add_padding(
             value=(0, 0, 0),
         )
 
-    return padded_image
+    return image
