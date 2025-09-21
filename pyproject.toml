@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "book-counter"
+version = "0.1.0"
+description = ""
+authors = ["adpakw <adpakw@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+ipykernel = "^6.30.1"
+opencv-python = "^4.12.0.88"
+ultralytics = "^8.3.202"
+pandas = "^2.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
