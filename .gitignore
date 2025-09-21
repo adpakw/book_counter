@@ -14,3 +14,4 @@ htmlcov
 .mypy_cache/
 *.pt
 /*results*
+solution*
