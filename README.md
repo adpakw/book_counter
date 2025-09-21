@@ -80,6 +80,10 @@
 
     ![stacked_books](task_images/18.jpg)
 
+    - **лежать хаотично**
+
+    ![chaotically_books](task_images/3.jpg)
+
 - Книга может быть **не полностью видна** на фото
 
 ![book_not_fully_visible](task_images/70.jpg)
