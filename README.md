@@ -182,16 +182,17 @@
 
 - Видно, что модель не справляется с ситуациями когда книги лежат **плотно друг к другу**
 
-![books_tightly_packed](../task_images/13.jpg)
+![books_tightly_packed](task_images/13.jpg)
 
 - Даже в некоторых **простых сценах** детектор не находит книги
 
-![simple_ex](../task_images/17.jpg)
+![simple_ex](task_images/17.jpg)
 
 - Она не решает проблему, когда все фото это и есть обложка книги, т.е. **нет фона**
 
-![img_wo_background](../task_images/181.jpg)
+![img_wo_background](task_images/181.jpg)
 
 - Она не решает проблему, когда книга может быть **не полностью видна** на фото
 
-![book_not_fully_visible](../task_images/70.jpg)
+![book_not_fully_visible](task_images/70.jpg)
+
